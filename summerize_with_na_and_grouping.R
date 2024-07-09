@@ -4,11 +4,11 @@ region_lang_data_na <- read_csv("files/region_lang_with_nas.csv")
 print(region_lang_data_na)
 
 #the following with result in NA summary
-summerized_data <- summarise(region_lang_data_na, min_most_at_work = min(most_at_work), max_most_at_work = max(most_at_work)) # nolint
+summerized_data <- summarize(region_lang_data_na, min_most_at_work = min(most_at_work), max_most_at_work = max(most_at_work)) # nolint
 print(summerized_data)
 
 #use the following to solve the issue by ignoring NA values
-corrected_summerized_data <- summarise(region_lang_data_na, min_most_at_work = min(most_at_work, na.rm = TRUE), max_most_at_work = max(most_at_work, na.rm = TRUE)) # nolint
+corrected_summerized_data <- summarize(region_lang_data_na, min_most_at_work = min(most_at_work, na.rm = TRUE), max_most_at_work = max(most_at_work, na.rm = TRUE)) # nolint
 
 print(corrected_summerized_data)
 
@@ -16,5 +16,5 @@ print(corrected_summerized_data)
 can_lang_data <- read_csv("files/can_lang.csv")
 print(can_lang_data)
 group_summary_by_category <- group_by(can_lang_data, category) |>
- summarise(min_most_at_work = min(most_at_work, na.rm = TRUE), max_most_at_work = max(most_at_work, na.rm = TRUE)) # nolint
+ summarize(min_most_at_work = min(most_at_work, na.rm = TRUE), max_most_at_work = max(most_at_work, na.rm = TRUE)) # nolint
 print(group_summary_by_category)
