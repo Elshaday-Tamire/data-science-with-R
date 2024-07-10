@@ -1,6 +1,6 @@
 library(tidyverse)
 
-tsv_file_path <- "files/can_lang.tsv"
+tsv_file_path <- "/R/files/can_lang.tsv"
 
 lang_data <- read_tsv(tsv_file_path)
 

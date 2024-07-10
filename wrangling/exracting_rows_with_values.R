@@ -1,6 +1,6 @@
 library(tidyverse)
 
-region_data <- read_csv("files/region_data.csv")
+region_data <- read_csv("/R/files/region_data.csv")
 
 print(region_data)
 

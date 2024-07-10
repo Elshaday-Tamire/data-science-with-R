@@ -1,6 +1,6 @@
 library(tidyverse)
 
-region_data <- read_csv("files/region_data.csv")
+region_data <- read_csv("/R/files/region_data.csv")
 
 household_greater_than_vancouver <- filter(region_data, households > 960894) # nolint
 

@@ -1,6 +1,6 @@
 library(tidyverse)
 
-tsv_file_path <- "files/can_lang_no_names.tsv"
+tsv_file_path <- "/R/files/can_lang_no_names.tsv"
 
 lang_data <- read_delim(tsv_file_path, delim = "\t", col_names = FALSE)
 

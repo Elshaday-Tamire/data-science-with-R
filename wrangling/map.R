@@ -1,6 +1,6 @@
 library(tidyverse)
 
-lang_data <- read_csv("files/can_lang.csv")
+lang_data <- read_csv("/R/files/can_lang.csv")
 
 summerized_data <- lang_data |>
   select(mother_tongue:lang_known) |>

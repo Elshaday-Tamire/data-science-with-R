@@ -1,5 +1,5 @@
 library(tidyverse)
-lang_data <- read_csv("files/can_lang.csv")
+lang_data <- read_csv("/R/files/can_lang.csv")
 
 print(lang_data)
 

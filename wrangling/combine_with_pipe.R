@@ -1,6 +1,6 @@
 library(tidyverse)
 
-untidy_lang_data <- read_csv("files/region_lang_top5_cities_messy.csv")
+untidy_lang_data <- read_csv("/R/files/region_lang_top5_cities_messy.csv")
 print(untidy_lang_data)
 
 longer_lang_data <- pivot_longer(untidy_lang_data, cols = Toronto:Edmonton, names_to = "region", values_to = "value") # nolint

@@ -2,7 +2,7 @@ library(DBI)
 library(dplyr)  # Load dplyr before dbplyr
 library(dbplyr)
 
-conn_lang_data <- dbConnect(RSQLite::SQLite(), "files/can_lang.db")
+conn_lang_data <- dbConnect(RSQLite::SQLite(), "/R/files/can_lang.db")
 
 tables <- dbListTables(conn_lang_data)
 
