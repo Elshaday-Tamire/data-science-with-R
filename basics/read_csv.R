@@ -2,7 +2,7 @@
 library(tidyverse)
 
 # Specify the path to your CSV file
-csv_file_path <- "/R/files/can_lang.csv"
+csv_file_path <- "files/can_lang.csv"
 
 # Read the CSV file into a data frame
 language_data <- read_csv(csv_file_path, skip = 0) #skip is used to skip lines with out comma or some information # nolint
